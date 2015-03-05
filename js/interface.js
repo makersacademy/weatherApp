@@ -2,6 +2,7 @@ $(document).ready(function(){
 
   var citiesApiUrl = "http://weather-api.herokuapp.com/cities";
   var cityApiUrl = "http://weather-api.herokuapp.com/temperature?city=";
+
   $.ajax({
     url: citiesApiUrl,
     dataType:'jsonp',
