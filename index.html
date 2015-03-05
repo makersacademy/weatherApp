@@ -7,24 +7,13 @@
   </head>
   <body>
     <main class="shadow">
-      <div class="icon snow">
+      <div class="icon weather-snow">
         <img src="images/snow.svg">
       </div>
       <select class="cities"></select>
       <span class="temperature"></span>
     </main>
     <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
-    <script>
-      var apiData = ["London", "Paris"];
-      var temperature = 22;
-      var weatherIcon = 'snow';
-      $.each(apiData, function(index, city) {
-        $('.cities').append(
-          $('<option></option>').val(city).html(city + " ⌄")
-        );
-      });
-      $('.temperature').text(temperature);
-      $('img').attr('src', 'images/' + weatherIcon + '.svg')
-    </script>
+    <script src="js/interface.js"></script>
   </body>
 </html>
